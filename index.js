@@ -92,7 +92,6 @@ function addFlavor(array, string){
 array.unshift(string)
 return array;
 
-console.log("task 3:", addFlavor(originalFlavors, "Rainbow Sherbert"));
 }
 
 
@@ -107,9 +106,11 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(array){
+ array.pop();
+ return array;
 }
+console.log("task 4:", removeLastFlavor(originalFlavors));
 
 
 
